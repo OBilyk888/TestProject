@@ -53,7 +53,7 @@ public class ListCollections {
         System.out.println(list.size());
 
         System.out.println(list.isEmpty());
-        list.clear();
+        //list.clear();
         System.out.println(list.isEmpty());
         list.addAll(list2);
         list.containsAll(list2);
@@ -64,6 +64,10 @@ public class ListCollections {
         System.out.println(iterator.next());
         System.out.println(iterator.next());
         System.out.println(iterator.hasNext());
+
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
 
     }
 }
